@@ -16,3 +16,9 @@ class User(models.Model):
         ordering = ['-c_time']
         verbose_name = '用户'
         verbose_name_plural = '用户'
+
+class books(models.Model):
+    bookname = models.CharField(max_length=128)
+    classification = models.CharField(max_length=128)
+    author = models.CharField(max_length=128)
+    img = models.CharField(max_length=360)

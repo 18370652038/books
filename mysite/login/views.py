@@ -6,8 +6,9 @@ import hashlib
 
 # Create your views here.
 def index(request):
-    pass
-    return render(request,'login/index.html')
+    index_from = models.books.objects.get(id=1)
+
+    return render(request,'login/index.html',locals())
 
 def login(request):
     if request.session.get('is_login',None):

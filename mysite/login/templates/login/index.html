@@ -6,4 +6,71 @@
     {% else %}
         <h1>你好游客，请登录</h1>
     {% endif %}
+<style>
+    .classification{
+        width: 1200px;height: 45px;
+    }
+    .classification-tab{
+        width: 1191px;height: 40px;z-index: 9999;background-color: #dff0d8;
+    }
+    #container{
+        width: 1200px;height: 2512px;
+    }
+    .container-e{
+        width: 1200px;height: 120px;background-color: #2e6da4;text-align: center;line-height: 120px;
+        font-size:60px;
+    }
+    .container-f .container-h{
+        width: 1210px;height: 258px;
+    }
+    .container-g{
+        width: 164px;height: 228px;
+    }
+
+
+
+</style>
+    <div class="classification">
+        <table class="classification-tab" >
+            <tr>
+                <td><a href="#"><center>玄幻魔法</center></a></td>
+                <td><a href="#"><center>武侠修真</center></a></td>
+                <td><a href="#"><center>纯爱耽美</center></a></td>
+                <td><a href="#"><center>都市言情</center></a></td>
+                <td><a href="#"><center>职场校园</center></a></td>
+                <td><a href="#"><center>穿越重生</center></a></td>
+                <td><a href="#"><center>历史军事</center></a></td>
+                <td><a href="#"><center>网游动漫</center></a></td>
+                <td><a href="#"><center>恐怖灵异</center></a></td>
+                <td><a href="#"><center>科幻小说</center></a></td>
+                <td><a href="#"><center>美文名著</center></a></td>
+                <td><a href="#"><center>热门推荐</center></a></td>
+            <tr/>
+        </table>
+    </div>
+    <div id="container">
+        <div class="container-e">
+            <p>欢迎登录本网站</p>
+        </div>
+        <table class="container-f">
+
+            <tr class="container-h">
+                <td style="width: 20px;height: 258px">
+                </td>
+                <td class="container-g">
+                    <img style="width: 120px;height: 150px" src="{{ index_from.img }}">
+                    <p style="height: 24px;font-size: 18px;color:chartreuse">{{ index_from.bookname }}</p>
+                    <p style="height: 14px;font-size: 7px">类别: {{ index_from.classification }}</p>
+                    <p style="height: 14px;font-size: 7px">作者: {{ index_from.author }}</p>
+                </td>
+                <td class="container-g"><p>ssssss</p></td>
+                <td class="container-g"><p>ssssss</p></td>
+                <td class="container-g"><p>ssssss</p></td>
+                <td class="container-g"><p>ssssss</p></td>
+                <td class="container-g"><p>ssssss</p></td>
+                <td class="container-g"><p>ssssss</p></td>
+            </tr>
+        </table>
+
+    </div>
 {% endblock %}
